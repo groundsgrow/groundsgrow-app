@@ -10,10 +10,12 @@ import {
 } from "@chakra-ui/react";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { useState } from "react";
-import { SiDiscord, SiGithub, SiTwitter, SiYoutube } from "react-icons/si";
+import { SiInstagram, SiGithub, SiTwitter, SiLinkedin } from "react-icons/si";
 import { CustomIconButton, LinkButton } from "tw-components";
 import NextLink from "next/link";
 import { Logo } from "components/logo";
+import siteConfig from "config";
+import siteConfigs from "config";
 
 export const HomepageTopNav = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -84,7 +86,7 @@ export const HomepageTopNav = () => {
                 as={LinkButton}
                 isExternal
                 noIcon
-                href="https://twitter.com/thirdweb_"
+                href={siteConfig.social.twitter}
                 color="gray.50"
                 bg="transparent"
                 aria-label="twitter"
@@ -96,23 +98,23 @@ export const HomepageTopNav = () => {
                 as={LinkButton}
                 isExternal
                 noIcon
-                href="https://discord.gg/thirdweb"
+                href={siteConfigs.social.instagram}
                 bg="transparent"
                 color="gray.50"
-                aria-label="discord"
-                icon={<Icon boxSize="1rem" as={SiDiscord} />}
+                aria-label="instagram"
+                icon={<Icon boxSize="1rem" as={SiInstagram} />}
                 category="topnav"
-                label="discord"
+                label="instagram"
               />
               <CustomIconButton
                 as={LinkButton}
                 isExternal
                 noIcon
-                href="https://www.youtube.com/channel/UCdzMx7Zhy5va5End1-XJFbA"
+                href={siteConfigs.social.linkedin}
                 bg="transparent"
                 color="gray.50"
                 aria-label="YouTube"
-                icon={<Icon boxSize="1rem" as={SiYoutube} />}
+                icon={<Icon boxSize="1rem" as={SiLinkedin} />}
                 category="topnav"
                 label="youtube"
               />
@@ -120,7 +122,7 @@ export const HomepageTopNav = () => {
                 as={LinkButton}
                 isExternal
                 noIcon
-                href="https://github.com/thirdweb-dev"
+                href={siteConfigs.social.github}
                 bg="transparent"
                 color="gray.50"
                 aria-label="github"

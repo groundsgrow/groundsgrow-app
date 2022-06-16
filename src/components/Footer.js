@@ -34,6 +34,7 @@ import {
   Link,
 } from "tw-components";
 import { sendEmailToConvertkit } from "utils/convertkit";
+import siteConfigs from "config";
 
 const HomepageFooter = () => {
   const { register, handleSubmit, setError } = useForm();
@@ -126,7 +127,7 @@ const HomepageFooter = () => {
                 as={LinkButton}
                 isExternal
                 noIcon
-                href="https://twitter.com/groundsgrow"
+                href={siteConfigs.social.twitter}
                 icon={<SiTwitter fontSize="1.25rem" />}
                 category="footer"
                 aria-label="Twitter"
@@ -135,27 +136,17 @@ const HomepageFooter = () => {
                 as={LinkButton}
                 isExternal
                 noIcon
-                href="https://discord.gg/groundsgrow"
-                aria-label="Discord"
-                icon={<SiDiscord fontSize="1.25rem" />}
-                category="footer"
-                label="discord"
-              />
-              <CustomIconButton
-                as={LinkButton}
-                isExternal
-                noIcon
-                href="https://www.linkedin.com/company/groundsgrow/"
+                href={siteConfigs.social.linkedin}
                 aria-label="LinkedIn"
                 icon={<SiLinkedin fontSize="1.25rem" />}
                 category="footer"
-                label="youtube"
+                label="linkedin"
               />
               <CustomIconButton
                 as={LinkButton}
                 isExternal
                 noIcon
-                href="https://www.instagram.com/groundsgrow/"
+                href={siteConfigs.social.instagram}
                 aria-label="Instagram"
                 icon={<SiInstagram fontSize="1.25rem" />}
                 category="footer"
@@ -165,7 +156,7 @@ const HomepageFooter = () => {
                 as={LinkButton}
                 isExternal
                 noIcon
-                href="https://github.com/groundsgrow"
+                href={siteConfigs.social.github}
                 aria-label="GitHub"
                 icon={<SiGithub fontSize="1.25rem" />}
                 category="footer"

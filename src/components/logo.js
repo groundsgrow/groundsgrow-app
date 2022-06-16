@@ -1,9 +1,4 @@
-import {
-  AspectRatio,
-  AspectRatioProps,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { AspectRatio, AspectRatioProps, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
 const SvgComponent = (props) => (

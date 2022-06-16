@@ -297,7 +297,12 @@ export default function Home() {
               </ListItem>
             </List>
             <LightMode>
-              <GeneralCta href="/contact" title="Start building today" size="lg" w="100%" />
+              <GeneralCta
+                href="/contact"
+                title="Start building today"
+                size="lg"
+                w="100%"
+              />
             </LightMode>
           </Box>
         </SimpleGrid>
