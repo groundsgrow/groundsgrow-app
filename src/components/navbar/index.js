@@ -68,14 +68,14 @@ export const HomepageTopNav = () => {
             spacing={10}
             as="nav"
           >
-            <NextLink href="/#developers" category="topnav" label="developers">
+            <NextLink href="/#why-we" category="topnav" label="developers">
               Developers
             </NextLink>
-            <NextLink href="/#features" category="topnav" label="features">
-              Features
+            <NextLink href="/#projects" category="topnav" label="projects">
+              Projects
             </NextLink>
-            <NextLink href="/#fees" category="topnav" label="fees">
-              Pricing
+            <NextLink href="/#solutions" category="topnav" label="solutions">
+            solutions
             </NextLink>
             <Flex
               display={{ base: "none", lg: "flex" }}

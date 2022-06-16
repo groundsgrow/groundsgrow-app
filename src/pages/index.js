@@ -57,10 +57,10 @@ export default function Home() {
               <Flex flexDir="column" align="center" gap={6}>
                 <GeneralCta href="/contact" size="lg" />
                 <Link
-                  href="#fees"
+                  href="#solutions"
                   borderBottomWidth="1px"
                   _hover={{
-                    textDecor: "none",
+                    textDecor: "solutions",
                     opacity: 1,
                   }}
                   opacity={0.8}
@@ -96,7 +96,7 @@ export default function Home() {
         </SimpleGrid>
       </HomepageSection>
 
-      <HomepageSection id="contracts" middleGradient>
+      <HomepageSection id="why-we" middleGradient>
         <Flex
           flexDir="column"
           gap={{ base: 6, md: 8 }}
@@ -213,7 +213,7 @@ export default function Home() {
 
       {/* section for some related projects */}
 
-      <HomepageSection id="developers" bottomPattern middleGradient>
+      <HomepageSection id="projects" bottomPattern middleGradient>
         <Flex
           flexDir="column"
           pt={{ base: 12, lg: 24 }}
@@ -308,7 +308,7 @@ export default function Home() {
         </SimpleGrid>
       </HomepageSection>
 
-      <HomepageSection id="examples" middleGradient>
+      <HomepageSection id="solutions" middleGradient>
         <Flex
           flexDir="column"
           py={{ base: 12, lg: 24 }}
