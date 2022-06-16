@@ -10,7 +10,7 @@ import {
   CheckboxGroup,
   Checkbox,
   Input,
-  Textarea
+  Textarea,
 } from "@chakra-ui/react";
 import { Heading, Text, Button } from "tw-components";
 import { HomepageSection } from "components/HomeSection";
@@ -81,7 +81,7 @@ export default function ContactPage() {
                   _dark={{
                     bg: "#141517",
                   }}
-                  spacing={[8,12]}
+                  spacing={[8, 12]}
                   py={6}
                   px={[6, 12]}
                 >
@@ -89,50 +89,44 @@ export default function ContactPage() {
                     <FormLabel htmlFor="todo" fontSize={"sm"} fontWeight={"md"}>
                       What would you like to do ?
                     </FormLabel>
-                    <CheckboxGroup
-                      colorScheme="purple"
-                    >
+                    <CheckboxGroup colorScheme="purple">
                       <Stack spacing={[1, 5]} direction={["column", "row"]}>
-                        <Checkbox value="build_a_digital_product">Build a digital product</Checkbox>
-                        <Checkbox value="improve_your_current_product">Improve your current product</Checkbox>
-                        <Checkbox value="digital_marketing">Digital Marketing</Checkbox>
+                        <Checkbox value="build_a_digital_product">
+                          Build a digital product
+                        </Checkbox>
+                        <Checkbox value="improve_your_current_product">
+                          Improve your current product
+                        </Checkbox>
+                        <Checkbox value="digital_marketing">
+                          Digital Marketing
+                        </Checkbox>
                         <Checkbox value="other">Other</Checkbox>
                       </Stack>
                     </CheckboxGroup>
                   </FormControl>
                   <FormControl isRequired>
-                        <Input
-                          type="text"
-                          name="name"
-                          placeholder="Your Name"
-                        />
-                    </FormControl>
-                    <FormControl isRequired>
-                        <Input
-                          type="text"
-                          name="Email"
-                          placeholder="Your Email"
-                        />
-                    </FormControl>
-                    <FormControl>
-                        <Input
-                          type="tel"
-                          name="phone"
-                          placeholder="Your Phone Number"
-                        />
-                    </FormControl>
-                    <FormControl>
-                        <Input
-                          type="text"
-                          name="about"
-                          placeholder="where did you hear about us ?"
-                        />
-                    </FormControl>
-                    <FormControl isRequired>
-                        <Textarea
-                          placeholder="tell us about your project and challenge you have"
-                        />
-                    </FormControl>
+                    <Input type="text" name="name" placeholder="Your Name" />
+                  </FormControl>
+                  <FormControl isRequired>
+                    <Input type="text" name="Email" placeholder="Your Email" />
+                  </FormControl>
+                  <FormControl>
+                    <Input
+                      type="tel"
+                      name="phone"
+                      placeholder="Your Phone Number"
+                    />
+                  </FormControl>
+                  <FormControl>
+                    <Input
+                      type="text"
+                      name="about"
+                      placeholder="where did you hear about us ?"
+                    />
+                  </FormControl>
+                  <FormControl isRequired>
+                    <Textarea placeholder="tell us about your project and challenge you have" />
+                  </FormControl>
                 </Stack>
                 <Flex
                   px={{
@@ -145,7 +139,7 @@ export default function ContactPage() {
                     bg: "#121212",
                   }}
                   justifyContent={"space-between"}
-                  flexDir={['column', 'row']}
+                  flexDir={["column", "row"]}
                 >
                   <Button
                     type="submit"

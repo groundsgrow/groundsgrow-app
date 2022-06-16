@@ -55,7 +55,7 @@ export default function Home() {
             </Heading>
             <LightMode>
               <Flex flexDir="column" align="center" gap={6}>
-                <GeneralCta size="lg" />
+                <GeneralCta href="/contact" size="lg" />
                 <Link
                   href="#fees"
                   borderBottomWidth="1px"
@@ -297,7 +297,7 @@ export default function Home() {
               </ListItem>
             </List>
             <LightMode>
-              <GeneralCta title="Start building today" size="lg" w="100%" />
+              <GeneralCta href="/contact" title="Start building today" size="lg" w="100%" />
             </LightMode>
           </Box>
         </SimpleGrid>
@@ -362,6 +362,7 @@ export default function Home() {
             <GeneralCta
               title="Contact us"
               size="lg"
+              href="/contact"
               w={{ base: "full", md: "inherit" }}
             />
           </LightMode>

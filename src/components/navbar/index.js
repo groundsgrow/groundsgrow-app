@@ -54,9 +54,8 @@ export const HomepageTopNav = () => {
           align="center"
           flexDir="row"
         >
-          <NextLink href="/" category="topnav" label="home">
-            <Logo color="#fff" />
-            {/* <Text>groundsgrow</Text> */}
+          <NextLink href="/">
+            <Logo />
           </NextLink>
           <Stack
             display={["none", "none", "flex"]}
@@ -67,13 +66,13 @@ export const HomepageTopNav = () => {
             spacing={10}
             as="nav"
           >
-            <NextLink href="#developers" category="topnav" label="developers">
+            <NextLink href="/#developers" category="topnav" label="developers">
               Developers
             </NextLink>
-            <NextLink href="#features" category="topnav" label="features">
+            <NextLink href="/#features" category="topnav" label="features">
               Features
             </NextLink>
-            <NextLink href="#fees" category="topnav" label="fees">
+            <NextLink href="/#fees" category="topnav" label="fees">
               Pricing
             </NextLink>
             <Flex

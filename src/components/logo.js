@@ -2,7 +2,7 @@ import {
   AspectRatio,
   AspectRatioProps,
   Stack,
-  VisuallyHidden,
+  Text,
 } from "@chakra-ui/react";
 import React from "react";
 
@@ -35,11 +35,11 @@ const SvgComponent = (props) => (
   </svg>
 );
 
-export const Logo = ({ hideIcon, hideWordmark, color }) => {
+export const Logo = () => {
   return (
     <Stack as="h2" align="center" direction="row">
       <SvgComponent />
-      <VisuallyHidden>thirdweb</VisuallyHidden>
+      <Text color="white">Groundsgrow</Text>
     </Stack>
   );
 };
