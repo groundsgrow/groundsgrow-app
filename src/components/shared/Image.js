@@ -1,28 +1,7 @@
 import { Box, chakra } from "@chakra-ui/react";
-import NextImage from "next/image";
 import { useMemo } from "react";
 import useDimensions from "react-cool-dimensions";
 import { isBrowser } from "utils/isBrowser";
-
-const ChakraNextUnwrappedImage = chakra(NextImage, {
-  shouldForwardProp: (prop) =>
-    [
-      "width",
-      "height",
-      "src",
-      "alt",
-      "quality",
-      "placeholder",
-      "blurDataURL",
-      "loader ",
-      "layout",
-      "sizes",
-      "onLoadingComplete",
-      "priority",
-    ].includes(prop),
-});
-
-const previousLoadedImagesSet = new Set();
 
 export const ChakraNextImage = (props) => {
   const {
@@ -31,7 +10,7 @@ export const ChakraNextImage = (props) => {
     width,
     quality = 90,
     height,
-    layout = "responsive",
+    layout = "fill",
     objectFit,
     objectPosition,
     placeholder = typeof src === "string" ? "empty" : "blur",
@@ -45,7 +24,7 @@ export const ChakraNextImage = (props) => {
     const _src =
       typeof src === "string" ? src : src?.default?.src || src?.src || "";
     return `${_src}_w=${_width}`;
-  }, [_width, src]);
+  }, [_width, src]); // {url}_w={width}
 
   const size =
     sizes ||
@@ -54,7 +33,7 @@ export const ChakraNextImage = (props) => {
       : "100vw");
   return (
     <Box maxW="100%" pos="relative" {...rest} ref={observe}>
-      <ChakraNextUnwrappedImage
+      <img
         onLoadingComplete={() => {
           previousLoadedImagesSet.add(imageId);
         }}
@@ -70,10 +49,6 @@ export const ChakraNextImage = (props) => {
         placeholder={placeholder}
         src={src}
         alt={alt}
-        priority={priority}
-        transition={
-          previousLoadedImagesSet.has(imageId) ? undefined : "all 0.2s"
-        }
         {...imgProps}
       />
     </Box>
