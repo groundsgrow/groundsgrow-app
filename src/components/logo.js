@@ -33,18 +33,12 @@ const SvgComponent = (props) => (
     />
     <use href="#a" x={57} y={63} />
   </svg>
-)
+);
 
-
-
-export const Logo = ({
-  hideIcon,
-  hideWordmark,
-  color,
-}) => {
+export const Logo = ({ hideIcon, hideWordmark, color }) => {
   return (
     <Stack as="h2" align="center" direction="row">
-      <SvgComponent/>
+      <SvgComponent />
       <VisuallyHidden>thirdweb</VisuallyHidden>
     </Stack>
   );

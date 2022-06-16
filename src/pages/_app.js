@@ -5,7 +5,7 @@ import chakraTheme from "theme";
 import { HomepageTopNav } from "components/navbar";
 import { generateBreakpointTypographyCssVars } from "tw-components/utils/typography";
 import { Global, css } from "@emotion/react";
-import Footer from 'components/Footer'
+import Footer from "components/Footer";
 
 const fontSizeCssVars = generateBreakpointTypographyCssVars();
 
@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
           >
             <HomepageTopNav />
             <Component {...pageProps} />
-            <Footer/>
+            <Footer />
           </Flex>
         </DarkMode>
       </ChakraProvider>

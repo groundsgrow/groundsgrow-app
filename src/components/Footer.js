@@ -181,21 +181,13 @@ const HomepageFooter = () => {
               <Stack spacing="4" minW="36" flex="1">
                 <Heading size="label.lg">Product</Heading>
                 <Stack spacing="3" shouldWrapChildren>
-                  <Link
-                    href="#features"
-                    category="footer"
-                    label="features"
-                  >
+                  <Link href="#features" category="footer" label="features">
                     Features
                   </Link>
                   <Link href="#fees" category="footer" label="pricing">
                     Pricing
                   </Link>
-                  <Link
-                    href="/dashboard"
-                    category="footer"
-                    label="dashboard"
-                  >
+                  <Link href="/dashboard" category="footer" label="dashboard">
                     Dashboard
                   </Link>
                 </Stack>
@@ -277,12 +269,7 @@ const HomepageFooter = () => {
                   >
                     Privacy Policy
                   </Link>
-                  <Link
-                    isExternal
-                    href="/tos"
-                    category="footer"
-                    label="terms"
-                  >
+                  <Link isExternal href="/tos" category="footer" label="terms">
                     Terms of Service
                   </Link>
                 </Stack>

@@ -250,7 +250,9 @@ export default function Home() {
               fontStyle="italic"
               textAlign={{ base: "center", md: "left" }}
             >
-              our services helps your business to grow on internet get more traffic and sales, we porvide everything from web development to marketing all services that you require for you busienss.
+              our services helps your business to grow on internet get more
+              traffic and sales, we porvide everything from web development to
+              marketing all services that you require for you busienss.
             </Text>
           </Flex>
           <Box
