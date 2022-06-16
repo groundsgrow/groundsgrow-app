@@ -9,7 +9,6 @@ const SvgComponent = (props) => (
     height={52}
     {...props}
   >
-    <title>{"New Project"}</title>
     <defs>
       <image
         width={137}
@@ -32,9 +31,8 @@ const SvgComponent = (props) => (
 
 export const Logo = () => {
   return (
-    <Stack as="h2" align="center" direction="row">
+    <Stack align="center" direction="row">
       <SvgComponent />
-      <Text color="white">Groundsgrow</Text>
     </Stack>
   );
 };

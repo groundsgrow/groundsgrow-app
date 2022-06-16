@@ -57,7 +57,7 @@ export const HomepageTopNav = () => {
           flexDir="row"
         >
           <NextLink href="/">
-            <Logo />
+            <span><Logo/></span>
           </NextLink>
           <Stack
             display={["none", "none", "flex"]}
