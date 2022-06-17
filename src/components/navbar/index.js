@@ -57,7 +57,9 @@ export const HomepageTopNav = () => {
           flexDir="row"
         >
           <NextLink href="/">
-            <span><Logo/></span>
+            <span>
+              <Logo />
+            </span>
           </NextLink>
           <Stack
             display={["none", "none", "flex"]}
@@ -75,7 +77,7 @@ export const HomepageTopNav = () => {
               Projects
             </NextLink>
             <NextLink href="/#solutions" category="topnav" label="solutions">
-            solutions
+              solutions
             </NextLink>
             <Flex
               display={{ base: "none", lg: "flex" }}
